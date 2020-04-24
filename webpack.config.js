@@ -11,7 +11,8 @@ const config = {
   },
   devServer: {
     hot: true,
-    contentBase: './dist'
+    contentBase: './dist',
+    port: 4000
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
