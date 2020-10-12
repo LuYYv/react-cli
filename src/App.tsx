@@ -7,24 +7,17 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+// import {useState} from "react";
+import { Test } from './Test';
+import 'antd/dist/antd.css'
 
 
 
-export const App:React.FC<> = props => {
+export const App:React.FC = () => {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
+        
 
         <Switch>
           <Route path="/about">
@@ -34,7 +27,7 @@ export const App:React.FC<> = props => {
             <Topics />
           </Route>
           <Route path="/">
-            <Home />
+            <Test />
           </Route>
         </Switch>
       </div>
@@ -42,9 +35,21 @@ export const App:React.FC<> = props => {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function Home() {
+//   // const [value ,setValue] = useState('');
+
+//   // @ts-ignore
+//   return (<div>
+//     {/*<Input*/}
+//     {/*    value={value}*/}
+//     {/*    onChange={e => setValue(e.target.value)}*/}
+//     {/*/>*/}
+
+//     {/*<div dangerouslySetInnerHTML={{__html: value}} />*/}
+
+
+//       </div>)
+// }
 
 function About() {
   return <h2>About</h2>;

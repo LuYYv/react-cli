@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
-export  default  (props) => {
-    return (
-        <div>woshinibaba</div>
-    )
+export default () => {
+  return (
+    <div 
+      className="test_container"
+    >woshinibaba</div>
+  )
 }
