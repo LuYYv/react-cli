@@ -15,7 +15,7 @@
     "@formily/react-schema-editor": "^1.1.2",
     "antd": "^3.26.4",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "rc-table": "^7.4.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
